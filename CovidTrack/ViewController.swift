@@ -8,7 +8,9 @@
 import UIKit
 import Charts
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource, UISearchResultsUpdating {
+    
+
     
     private var scope:APICaller.DataScope = .national
     
@@ -28,17 +30,42 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
+    
+//MARK: -  searchController
+    let searchController:UISearchController = {
+        let vc = UISearchController(searchResultsController: SearchResultViewController())
+        vc.searchBar.placeholder = "states"
+        vc.searchBar.searchBarStyle = .default
+        return vc
+    }()
+    
+    private var serchTime : Timer?
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let text = searchController.searchBar.text
+        serchTime?.invalidate()
+        
+        serchTime = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: { time in
+            print("\(time) | \(text)")
+        })
+    }
+    
+    //MARK: -  life cycle
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setTitle()
         view.addSubview(tableView)
+        navigationItem.searchController = searchController
         tableView.delegate = self
         tableView.dataSource = self
         getUSdata()
-      
+        searchController.searchResultsUpdater = self
         
     }
+    
+
     
     private func createGraph(){
         tableView.tableHeaderView = nil

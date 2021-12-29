@@ -16,6 +16,7 @@
 		9355A568277AEB7200B4D4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9355A566277AEB7200B4D4BD /* LaunchScreen.storyboard */; };
 		9355A570277AECA600B4D4BD /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A56F277AECA600B4D4BD /* APICaller.swift */; };
 		9355A572277AFB9700B4D4BD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A571277AFB9700B4D4BD /* FilterViewController.swift */; };
+		9355A574277C2F7D00B4D4BD /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A573277C2F7D00B4D4BD /* SearchResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9355A569277AEB7200B4D4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9355A56F277AECA600B4D4BD /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		9355A571277AFB9700B4D4BD /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		9355A573277C2F7D00B4D4BD /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9B20243D0412B250FC6C675F /* Pods-CovidTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTrack.release.xcconfig"; path = "Target Support Files/Pods-CovidTrack/Pods-CovidTrack.release.xcconfig"; sourceTree = "<group>"; };
 		B5278BD7E5293A99F37BEC7E /* Pods-CovidTrack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTrack.debug.xcconfig"; path = "Target Support Files/Pods-CovidTrack/Pods-CovidTrack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +62,6 @@
 				B5278BD7E5293A99F37BEC7E /* Pods-CovidTrack.debug.xcconfig */,
 				9B20243D0412B250FC6C675F /* Pods-CovidTrack.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +90,7 @@
 				9355A55B277AEB7100B4D4BD /* AppDelegate.swift */,
 				9355A55D277AEB7100B4D4BD /* SceneDelegate.swift */,
 				9355A55F277AEB7100B4D4BD /* ViewController.swift */,
+				9355A573277C2F7D00B4D4BD /* SearchResultViewController.swift */,
 				9355A571277AFB9700B4D4BD /* FilterViewController.swift */,
 				9355A561277AEB7100B4D4BD /* Main.storyboard */,
 				9355A564277AEB7200B4D4BD /* Assets.xcassets */,
@@ -217,6 +219,7 @@
 				9355A55C277AEB7100B4D4BD /* AppDelegate.swift in Sources */,
 				9355A55E277AEB7100B4D4BD /* SceneDelegate.swift in Sources */,
 				9355A570277AECA600B4D4BD /* APICaller.swift in Sources */,
+				9355A574277C2F7D00B4D4BD /* SearchResultViewController.swift in Sources */,
 				9355A572277AFB9700B4D4BD /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
