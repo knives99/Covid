@@ -95,7 +95,7 @@ struct APICaller{
     
 }
 
-struct USData:Codable{
+struct USData:Codable,Hashable{
     let date:Int
     let death:Int?
 }

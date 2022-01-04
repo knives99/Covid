@@ -28,8 +28,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let tableView :UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.backgroundColor = .red
         return table
     }()
+    
+
     
 //MARK: -  searchController
     let searchController:UISearchController = {
@@ -44,7 +47,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func updateSearchResults(for searchController: UISearchController) {
         let text = searchController.searchBar.text
         serchTime?.invalidate()
-        
         serchTime = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: { time in
             print("\(time) | \(text)")
         })
@@ -125,9 +127,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
+//        tableView.frame = view.bounds
+        
+        setTableViewAutoLayout()
         barChart.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.width)
         
+    }
+    
+    func setTableViewAutoLayout(){
+        //這 property 的用途是告訴 iOS 自動建立放置位置的約束條件，而第一步是須明確告訴它不要這樣做，因此需設為false。
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
     
     @objc private func didTapBtn(){
