@@ -13,6 +13,7 @@
 		93197353277D871400025AF1 /* SecondChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93197352277D871400025AF1 /* SecondChildViewController.swift */; };
 		93197357277D94EC00025AF1 /* FirstChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93197356277D94EC00025AF1 /* FirstChildCell.swift */; };
 		93197359277D9FE400025AF1 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93197358277D9FE400025AF1 /* HeaderCollectionReusableView.swift */; };
+		9323E6B427954CBE00DC863F /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323E6B327954CBE00DC863F /* AVViewController.swift */; };
 		9355A55C277AEB7100B4D4BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A55B277AEB7100B4D4BD /* AppDelegate.swift */; };
 		9355A55E277AEB7100B4D4BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A55D277AEB7100B4D4BD /* SceneDelegate.swift */; };
 		9355A560277AEB7100B4D4BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9355A55F277AEB7100B4D4BD /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 		93197352277D871400025AF1 /* SecondChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondChildViewController.swift; sourceTree = "<group>"; };
 		93197356277D94EC00025AF1 /* FirstChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChildCell.swift; sourceTree = "<group>"; };
 		93197358277D9FE400025AF1 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		9323E6B327954CBE00DC863F /* AVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
 		9355A558277AEB7100B4D4BD /* CovidTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9355A55B277AEB7100B4D4BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9355A55D277AEB7100B4D4BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			path = firstChild;
 			sourceTree = "<group>";
 		};
+		9323E6B227954CA000DC863F /* Tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				9323E6B327954CBE00DC863F /* AVViewController.swift */,
+			);
+			path = Tab3;
+			sourceTree = "<group>";
+		};
 		9355A54F277AEB7100B4D4BD = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		9355A55A277AEB7100B4D4BD /* CovidTrack */ = {
 			isa = PBXGroup;
 			children = (
+				9323E6B227954CA000DC863F /* Tab3 */,
 				9355A56F277AECA600B4D4BD /* APICaller.swift */,
 				9355A55B277AEB7100B4D4BD /* AppDelegate.swift */,
 				9355A55D277AEB7100B4D4BD /* SceneDelegate.swift */,
@@ -257,6 +268,7 @@
 				9319734B277C3D8600025AF1 /* MainViewController.swift in Sources */,
 				93197359277D9FE400025AF1 /* HeaderCollectionReusableView.swift in Sources */,
 				9355A560277AEB7100B4D4BD /* ViewController.swift in Sources */,
+				9323E6B427954CBE00DC863F /* AVViewController.swift in Sources */,
 				9355A55C277AEB7100B4D4BD /* AppDelegate.swift in Sources */,
 				93197357277D94EC00025AF1 /* FirstChildCell.swift in Sources */,
 				93197353277D871400025AF1 /* SecondChildViewController.swift in Sources */,
